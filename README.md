@@ -6,7 +6,7 @@ Website URL: [https://proninyaroslav.ru](https://proninyaroslav.ru)
 
 ## 📄 License
 
-    Copyright (C) 2023 Yaroslav Pronin <proninyaroslav@mail.ru>)
+    Copyright (C) 2023 Yaroslav Pronin <proninyaroslav@mail.ru>
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
