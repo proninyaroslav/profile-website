@@ -1,0 +1,12 @@
+.error-page {
+  &__title {
+    text-align: end;
+  }
+
+  &__code {
+    $font-size: clamp(6rem, 8vw, 8rem);
+
+    font-size: $font-size;
+    line-height: $font-size;
+  }
+}

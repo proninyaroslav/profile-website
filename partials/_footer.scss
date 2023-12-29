@@ -1,0 +1,22 @@
+@use "/styles/theme/dimen";
+
+.footer {
+  width: 100%;
+  max-width: dimen.$max-content-width;
+  margin-bottom: clamp(2rem, 3vw, 3rem);
+  padding-inline: dimen.$section-padding;
+
+  &__copyright {
+    padding-block: 1rem;
+  }
+
+  &__copyright-symbol {
+    display: inline-block;
+
+    width: dimen.$font-size;
+    height: dimen.$font-size;
+    margin-top: -4px;
+
+    vertical-align: middle;
+  }
+}

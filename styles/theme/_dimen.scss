@@ -1,0 +1,13 @@
+$breakpoints: (
+  "xs": 0,
+  "sm": 576px,
+  "md": 768px,
+  "lg": 992px,
+  "xl": 1200px,
+  "xxl": 1400px,
+);
+$max-content-width: 720px;
+$font-size: clamp(1rem, 2vw, 1.2rem);
+$line-height: clamp(1.75rem, 3vw, 2.1rem);
+$section-padding-mobile: 1rem;
+$section-padding: clamp($section-padding-mobile, 2vw, 2rem);

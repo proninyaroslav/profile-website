@@ -1,0 +1,17 @@
+@use "./palette" as *;
+
+:root {
+  --color-background: #{$background};
+  --color-font: #{$font};
+  --color-font-heading: #{$font-heading};
+  --color-font-link: #{$font-link};
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: #{$background-dark};
+    --color-font: #{$font-dark};
+    --color-font-heading: #{$font-heading-dark};
+    --color-font-link: #{$font-link-dark};
+  }
+}

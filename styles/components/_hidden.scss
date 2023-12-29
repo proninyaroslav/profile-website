@@ -1,0 +1,5 @@
+@use "/styles/mixins/utils";
+
+.hidden {
+  @include utils.hide-text;
+}

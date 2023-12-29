@@ -1,0 +1,11 @@
+@use "sass:list";
+
+@mixin transition($properties: all) {
+  $transitions: ();
+
+  @each $p in $properties {
+    $transitions: list.append($transitions, $p 0.15s ease-in, comma);
+  }
+
+  transition: $transitions;
+}

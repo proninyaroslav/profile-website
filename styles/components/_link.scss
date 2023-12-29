@@ -1,0 +1,8 @@
+@use "/styles/theme/dimen";
+@use "/styles/theme/typos" as *;
+
+a {
+  font-size: dimen.$font-size;
+  font-weight: 500;
+  color: var(--color-font-link);
+}

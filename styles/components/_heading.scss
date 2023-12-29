@@ -1,0 +1,26 @@
+@use "/styles/theme/typos" as *;
+
+:is(h1, h2, h3, h4, h5, h6) {
+  font-family: $font-family-heading;
+  color: var(--color-font-heading);
+}
+
+h1 {
+  font-size: clamp(2.25rem, 3vw, 2.7rem);
+  font-weight: 700;
+  line-height: clamp(2.7rem, 4vw, 3.24rem);
+  letter-spacing: -0.0938rem;
+}
+
+h2 {
+  font-size: clamp(2rem, 3vw, 2.4rem);
+  font-weight: 700;
+  line-height: clamp(2.8rem, 4vw, 3.36rem);
+  letter-spacing: -0.0313rem;
+}
+
+h3 {
+  font-size: clamp(1.5rem, 2vw, 1.8rem);
+  font-weight: 700;
+  line-height: clamp(2.1rem, 3vw, 2.52rem);
+}

@@ -1,0 +1,41 @@
+@use "/styles/theme/dimen";
+@use "/styles/mixins/utils";
+
+.other-item {
+  @include utils.media-width(map-get(dimen.$breakpoints, "md")) {
+    width: 100%;
+  }
+
+  display: flex;
+  flex-flow: row nowrap;
+  width: fit-content;
+  color: var(--color-font);
+
+  &__icon {
+    $size: 2.5rem;
+
+    width: $size;
+    height: $size;
+    margin-inline-end: 1.5rem;
+  }
+
+  &__content {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  &__link {
+    display: flex;
+    flex-flow: row wrap;
+    column-gap: 0.5rem;
+    align-items: center;
+
+    text-decoration: none;
+
+    &::after {
+      content: "→";
+    }
+  }
+}

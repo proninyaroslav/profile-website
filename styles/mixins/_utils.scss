@@ -1,0 +1,16 @@
+@mixin hide-text() {
+  position: absolute;
+  text-indent: -9999px;
+}
+
+@mixin hide-alt() {
+  overflow: hidden;
+  text-indent: -9999px;
+  white-space: nowrap;
+}
+
+@mixin media-width($size) {
+  @media only screen and (max-width: $size) {
+    @content;
+  }
+}

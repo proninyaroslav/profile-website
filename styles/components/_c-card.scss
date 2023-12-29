@@ -1,0 +1,25 @@
+@use "/styles/theme/palette" as *;
+@use "/styles/theme/anim";
+
+.c-card {
+  --color-background: #{$card-background};
+  --box-shadow-color: rgb(37 37 37 / 10%);
+
+  @include anim.transition(box-shadow transform);
+
+  margin-bottom: 0.5rem;
+  padding: 1.2rem;
+  background: var(--color-background);
+  border-radius: 1.2rem;
+
+  &:hover,
+  &:focus-visible {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 4px 0 var(--box-shadow-color);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    --color-background: #{$card-background-dark};
+    --box-shadow-color: rgb(37 37 37 / 50%);
+  }
+}

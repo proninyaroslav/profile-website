@@ -1,0 +1,11 @@
+.social-links {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 1rem;
+
+  list-style-type: none;
+}

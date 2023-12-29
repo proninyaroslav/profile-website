@@ -1,0 +1,17 @@
+.social-item {
+  padding: 0.5rem;
+  border-radius: 10rem;
+
+  &__icon {
+    $size: 3rem;
+
+    width: $size;
+    height: $size;
+    filter: sepia(35%) grayscale(35%);
+
+    @media (prefers-color-scheme: dark) {
+      filter: none;
+      mix-blend-mode: exclusion;
+    }
+  }
+}

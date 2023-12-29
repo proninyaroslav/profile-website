@@ -1,0 +1,33 @@
+@use "./mixins/utils";
+@use "./theme/typos" as *;
+@use "./theme/dimen";
+
+html {
+  font-family: $font-family;
+  line-height: dimen.$line-height;
+}
+
+p {
+  font-size: dimen.$font-size;
+  font-weight: 500;
+  color: var(--color-font);
+}
+
+.app {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  background: var(--color-background);
+
+  &__content {
+    display: flex;
+    flex: 1;
+    flex-flow: column nowrap;
+    gap: clamp(1rem, 2vw, 2rem);
+    justify-content: center;
+
+    width: 100%;
+    max-width: dimen.$max-content-width;
+    padding: clamp(2rem, 4vw, 4rem) dimen.$section-padding;
+  }
+}

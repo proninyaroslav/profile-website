@@ -1,0 +1,23 @@
+@use "/styles/theme/palette" as *;
+@use "/styles/mixins/utils";
+
+.profile-avatar {
+  $size: 10.49rem;
+
+  --color-background: #{$card-background};
+
+  @include utils.hide-alt;
+
+  width: $size;
+  height: $size;
+
+  object-fit: cover;
+  background:
+    url("/icon.png") center / cover no-repeat,
+    var(--color-background);
+  border-radius: $size;
+
+  @media (prefers-color-scheme: dark) {
+    --color-background: #{$card-background-dark};
+  }
+}

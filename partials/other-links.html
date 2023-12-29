@@ -1,0 +1,14 @@
+<ul class="other-links">
+  {{#> other-item icon="#icons8-key" }}
+  <h3>GPG key:</h3>
+
+  {{> other-item-link link="https://pgp.mit.edu/pks/lookup?search=0x53D9BBCE2D600DA7" label="pgp.mit.edu" }}
+  {{> other-item-link link="https://keyserver.ubuntu.com/pks/lookup?search=0x53D9BBCE2D600DA7&fingerprint=on&op=index"
+  label="keyserver.ubuntu.com" }}
+  {{> other-item-link link="/mirror/gpg-key.asc" label="Key File" }}
+  {{/other-item }}
+
+  {{#> other-item icon="#hi-ouline-server-stack" }}
+  {{> other-item-link link="/mirror/" label="Public Files Mirror" }}
+  {{/other-item }}
+</ul>

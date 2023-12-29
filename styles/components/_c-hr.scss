@@ -1,0 +1,11 @@
+.c-hr {
+  --color-border: #4b4b4b;
+
+  border: none {
+    top: 1px solid var(--color-border);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    --color-border: #fff;
+  }
+}
