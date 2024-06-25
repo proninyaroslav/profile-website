@@ -1,4 +1,8 @@
 <main class="app__content error-page" role="alert">
+    {{#if home-button }}
+    <a href="/" class="error-page__home-button">← Back to Home</a>
+    {{/if}}
+
     <h1 class="error-page__title">
         {{#if code }}
         <div class="error-page__code">{{ code }}</div>

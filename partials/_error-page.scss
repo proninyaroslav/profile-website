@@ -1,6 +1,13 @@
 .error-page {
+  align-items: flex-end;
+  justify-content: space-between;
+  text-align: end;
+
   &__title {
-    text-align: end;
+    display: flex;
+    flex: 1;
+    flex-flow: column nowrap;
+    justify-content: center;
   }
 
   &__code {
