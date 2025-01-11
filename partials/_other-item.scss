@@ -1,15 +1,16 @@
 @use "/styles/theme/dimen";
 @use "/styles/mixins/utils";
+@use "sass:map";
 
 .other-item {
-  @include utils.media-width(map-get(dimen.$breakpoints, "md")) {
-    width: 100%;
-  }
-
   display: flex;
   flex-flow: row nowrap;
   width: fit-content;
   color: var(--color-font);
+
+  @include utils.media-width(map.get(dimen.$breakpoints, "md")) {
+    width: 100%;
+  }
 
   &__icon {
     $size: 2.5rem;
